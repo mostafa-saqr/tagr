@@ -1,0 +1,110 @@
+<% 
+var benefits = [
+    {
+        img:'../src/images/benefits/b1.svg',
+        title:'المبيعات',
+        list:[
+        'فواتير المبيعات',
+        'مرتجع المبيعات',
+       ' العروض والخصومات',
+        'طباعة الفواتير',
+        'البيع بالآجل',
+            
+        ]
+    },
+    {
+        img:'../src/images/benefits/b2.svg',
+        title:'المنتجات',
+        list:[
+        'تصنيفات المنتجات',
+        'صور المنتجات',
+        'طباعة الباركود',
+        'وحدات القياس',
+       ' حد الطلب وحد التنبيه ',
+       ' الأرصدة الافتتاحية'
+            
+        ]
+    },
+    {
+        img:'../src/images/benefits/b3.svg',
+        title:'المخازن',
+        list:[
+        'نقل المنتجات بين المخازن ونقاط البيع',
+       ' تسجيل جميع الحركات من والى المخزن',
+        'ارصدة المخازن',
+        'امين المخزن'
+        ]
+    },
+    {
+        img:'../src/images/benefits/b4.svg',
+        title:'المشتريات',
+        list:[
+        'فواتير المشتريات',
+        'مرتجعات المشتريات',
+        'توزيع المنتجات على المخازن',
+        'الشراء بالآجل'
+        ]
+    },
+    {
+        img:'../src/images/benefits/b5.svg',
+        title:'مراقبه عمليات النظام',
+        list:[
+            'تسجيل وقت ونوع جميع العمليات جميع العمليات التي يتم اجرائها بواسطة أي مستخدم'
+            
+        ]
+    },
+    {
+        img:'../src/images/benefits/b6.svg',
+        title:'المستخدمين',
+        list:[
+            'التحكم في صلاحيات المستخدمين على حده بما يناسب طبيعة عمل كل مستخدم',
+            
+        ]
+    },
+    {
+        img:'../src/images/benefits/b7.svg',
+        title:'العملاء والموردين',
+        list:[
+            'تسجيل ومتابعة عمليات العملاء والموردين',
+            
+        ]
+    },
+    {
+        img:'../src/images/benefits/b8.svg',
+        title:'نقاط البيع',
+        list:[
+     'البيع وطباعة الفواتير من خلال موبايل ابلكيشن او من أي جهاز ',
+        'البيع دون الحاجة للاتصال بالانترنت ',
+        'صلاحيات التحكم في السعر',
+        'صلاحيات الخصومات'
+        ]
+    },
+    
+]
+%>
+    <section class="benefits">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-5">المميزات</h2>
+                </div>
+                <% benefits.forEach(function(item){ %>
+                    <div class="col-md-3 mb-3">
+                        <div class="image-panel">
+                            <img src="<%= item.img %> " alt="">
+                        </div>
+                        <h5 class="main-color bold mb-4">
+                            <%= item.title  %>
+                        </h5>
+                        <% item.list.forEach(function(itemList){ %>
+                            <ul class="benfits-list">
+                                <li>
+                                    <%= itemList  %>
+                                </li>
+                            </ul>
+                            <% }) %>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </section>

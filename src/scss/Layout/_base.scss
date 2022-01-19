@@ -1,0 +1,54 @@
+$mainColor:#2A459E;
+$secondColor:#F79826;
+$lightGray:#F2F2F2;
+$gray: #E2E2E2;
+.main-color {
+    color: $mainColor;
+}
+
+.main-bg {
+    background: $mainColor !important;
+    color: white;
+}
+
+.second-color {
+    color: $secondColor !important;
+}
+
+.gray-bg {
+    background: $gray !important;
+}
+
+.lightGray-bg {
+    background: $lightGray !important;
+}
+
+.second-bg {
+    background: $secondColor;
+    color: white;
+}
+
+.white-color {
+    color: white !important;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+}

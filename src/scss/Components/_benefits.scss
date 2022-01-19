@@ -1,0 +1,14 @@
+.image-panel {
+    width: 123px;
+    height: 123px;
+    background: $mainColor;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

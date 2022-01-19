@@ -1,0 +1,64 @@
+<% var faq = [
+    {
+        id:1,
+        title:`تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود`,
+        content:``
+    },
+    {
+        id:2,
+        title:`تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود`,
+        content:``
+    },
+    {
+        id:3,
+        title:`تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود`,
+        content:`منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات, فقط يحتاج الاتصال بالإنترنت منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات, فقط يحتاج الاتصال بالإنترنت منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات, فقط يحتاج الاتصال بالإنترنت`
+    },
+    {
+        id:4,
+        title:`تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود`,
+        content:``
+    },
+] %>
+    <%-include('./ejs/layout/head') %>
+        <%-include('./ejs/components/navbar') %>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 page-title second-bg p-3">
+                        <h1>الاسئلة الشائعة </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pt-5 pb-5 main-color">
+                        منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات, فقط يحتاج الاتصال بالإنترنت منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة
+                        السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات, فقط يحتاج الاتصال بالإنترنت منصة تاجر نظام متكامل لإدارة الأعمال والمشروعات والأنشطة التجارية يعمل على البيئة السحابية (الكلاود) لا يحتاج الى تحميل او تنصيب او أي تجهيزات,
+                        فقط يحتاج الاتصال بالإنترنت
+                    </div>
+                    <div class="col-md-12 mb-4">
+                        <div class="accordion" id="accordionExample">
+                            <% faq.forEach(function(item){ %>
+                                <div class="accordion-item ">
+                                    <h2 class="accordion-header " id="heading<%=item.id%>">
+                                        <button class="accordion-button main-bg" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%=item.id%>" aria-expanded="false" aria-controls="collapse<%=item.id%>">
+                                        <span class="white-color"><%=item.title%></span>
+                            </button>
+                                    </h2>
+                                    <div id="collapse<%=item.id%>" class="accordion-collapse collapse" aria-labelledby="heading<%=item.id%>" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <%=item.content%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <%})%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <%- include('./ejs/layout/footer') %>
