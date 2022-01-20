@@ -15,3 +15,55 @@
 .green-bg {
     background-color: #4BAE4F;
 }
+
+.bundles {
+    .accordion-button {
+        background: transparent;
+        box-shadow: none;
+        padding: 0.3rem 1.25rem;
+        cursor: pointer;
+        &:before {
+            content: "\61";
+            transition: transform .2s ease-in-out;
+            font-family: "face-mess" !important;
+            color: white;
+            background: $secondColor;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 13px;
+            margin-left: 12px;
+            margin-right: -10px;
+        }
+        &:after {
+            background-image: none !important;
+            width: auto;
+            height: auto;
+            margin-right: unset;
+        }
+    }
+    .accordion-button:not(.collapsed):has(> a.active) {
+        background-color: $mainColor;
+    }
+    .accordion-button:not(.collapsed) {
+        background: transparent;
+        box-shadow: none;
+        &:before {
+            content: "\62";
+            transition: transform .2s ease-in-out;
+            font-family: "face-mess" !important;
+            color: $secondColor;
+            background: white;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 13px;
+            margin-left: 12px;
+            margin-right: -10px;
+        }
+    }
+}
