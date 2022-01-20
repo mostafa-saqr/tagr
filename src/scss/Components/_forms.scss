@@ -6,4 +6,16 @@
     textarea {
         border: 1px solid #BCBCBC;
     }
+    .input-icon {
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: $gray;
+        }
+    }
+    .form-control {
+        padding: 0.375rem 2rem;
+    }
 }

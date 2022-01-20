@@ -1,11 +1,18 @@
 .navbar-dark .navbar-nav {
     .nav-item {
         height: 76px;
+        @media only screen and (max-width: 768px) {
+            height: inherit;
+        }
         .nav-link {
             color: rgb(255 255 255);
             border-bottom: 4px solid transparent;
             height: 100%;
             padding-top: 25px;
+            @media only screen and (max-width: 768px) {
+                padding-top: 0px;
+                border-bottom: 2px solid transparent;
+            }
             &:hover {
                 color: $secondColor;
                 border-bottom: 4px solid $secondColor;
@@ -14,6 +21,9 @@
         .nav-link.active {
             color: $secondColor;
             border-bottom: 4px solid $secondColor;
+            @media only screen and (max-width: 768px) {
+                border-bottom: 2px solid transparent;
+            }
         }
     }
 }

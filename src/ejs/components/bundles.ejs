@@ -94,7 +94,9 @@ var bundles = [
                                 <tr id="<%= item.id %> " class="<%= index % 2 !== 0 ? 'lightGray-bg': '' %> ">
                                     <td>
                                         <div data-bs-toggle="collapse" data-bs-target="#collapse<%= item.id %>" aria-expanded="false" aria-controls="collapse<%= item.id %>">
-                                            <button>+</button>
+                                            <span class="p-icon second-bg">
+                                                <i class="tagr-vector"></i>
+                                            </span>
                                             <%= item.title %>
                                         </div>
 
@@ -106,10 +108,14 @@ var bundles = [
                                             </td>
                                             <% }  %>
                                                 <% if(backage == 'true') {%>
-                                                    <td>+</td>
+                                                    <td><span class="p-icon green-bg">
+                                                        <i class="tagr-android-done"></i>
+                                                    </span></td>
                                                     <% }  %>
                                                         <% if(backage == 'false') {%>
-                                                            <td>-</td>
+                                                            <td><span class="p-icon red-bg">
+                                                                <i class="tagr-android-close"></i>
+                                                            </span></td>
                                                             <% }  %>
                                                                 <% }) %>
 

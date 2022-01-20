@@ -51,4 +51,19 @@ h4 {
 
 section {
     padding: 50px;
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.social-ico {
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
 }
