@@ -59,3 +59,10 @@ $d: 2em;
         }
     }
 }
+
+.elec-invoice {
+    @media screen and (max-width: 991px) {
+        line-height: 1 !important;
+        padding-top: 19px;
+    }
+}
