@@ -1,1 +1,1 @@
-console.log("hiii"),alert("ggg");
+$(".owl-carousel").owlCarousel({loop:!0,margin:10,responsiveClass:!0,rtl:!0,responsive:{0:{items:2,nav:!1,dots:!0},600:{items:2,nav:!1},1000:{items:2,nav:!0,loop:!1}}});

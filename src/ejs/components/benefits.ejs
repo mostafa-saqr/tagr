@@ -88,23 +88,51 @@ var benefits = [
                 <div class="col-md-12 text-center">
                     <h2 class="mb-5">المميزات</h2>
                 </div>
-                <% benefits.forEach(function(item){ %>
-                    <div class="col-md-3 mb-3">
-                        <div class="image-panel">
-                            <img src="<%= item.img %> " alt="">
-                        </div>
-                        <h5 class="main-color bold mb-4">
-                            <%= item.title  %>
-                        </h5>
-                        <% item.list.forEach(function(itemList){ %>
-                            <ul class="benfits-list">
-                                <li>
-                                    <%= itemList  %>
-                                </li>
-                            </ul>
+                <div class="col-md-12 d-md-block d-none">
+                    <div class="row">
+                        <% benefits.forEach(function(item){ %>
+                            <div class="col-md-3 mb-3">
+                                <div class="image-panel">
+                                    <img src="<%= item.img %> " alt="">
+                                </div>
+                                <h5 class="main-color bold mb-4">
+                                    <%= item.title  %>
+                                </h5>
+                                <% item.list.forEach(function(itemList){ %>
+                                    <ul class="benfits-list">
+                                        <li>
+                                            <%= itemList  %>
+                                        </li>
+                                    </ul>
+                                    <% }) %>
+                            </div>
                             <% }) %>
                     </div>
-                    <% }) %>
+                </div>
+                <div class="col-md-12 d-block d-md-none">
+                    <div class="owl-carousel owl-theme">
+
+                        <% benefits.forEach(function(item){ %>
+                            <div class="item mb-3">
+                                <div class="image-panel">
+                                    <img src="<%= item.img %> " alt="">
+                                </div>
+                                <h5 class="main-color bold mb-4">
+                                    <%= item.title  %>
+                                </h5>
+                                <% item.list.forEach(function(itemList){ %>
+                                    <ul class="benfits-list">
+                                        <li>
+                                            <%= itemList  %>
+                                        </li>
+                                    </ul>
+                                    <% }) %>
+                            </div>
+                            <% }) %>
+
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
