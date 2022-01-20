@@ -22,10 +22,12 @@
 ] %>
     <%-include('./ejs/layout/head') %>
         <%-include('./ejs/components/navbar') %>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 page-title second-bg p-3">
-                        <h1>الاسئلة الشائعة </h1>
+            <div class="second-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 page-title p-3">
+                            <h3>الاسئلة الشائعة </h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,7 +41,7 @@
                     <div class="col-md-12 mb-4">
                         <div class="accordion" id="accordionExample">
                             <% faq.forEach(function(item){ %>
-                                <div class="accordion-item ">
+                                <div class="accordion-item mb-2">
                                     <h2 class="accordion-header " id="heading<%=item.id%>">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%=item.id%>" aria-expanded="false" aria-controls="collapse<%=item.id%>">
                                         <span class="white-color"><%=item.title%></span>
