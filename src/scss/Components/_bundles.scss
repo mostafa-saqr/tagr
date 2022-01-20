@@ -44,9 +44,6 @@
             margin-right: unset;
         }
     }
-    .accordion-button:not(.collapsed):has(> a.active) {
-        background-color: $mainColor;
-    }
     .accordion-button:not(.collapsed) {
         background: transparent;
         box-shadow: none;

@@ -4,7 +4,7 @@ $d: 2em;
     background-image: url(../../src/images/slider-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
         height: auto
     }
     ul {
@@ -13,7 +13,7 @@ $d: 2em;
         height: 80vh;
         list-style: none;
         margin: -46px 3em 0px 1px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             margin: -46px 1em 0px 1px;
         }
         img {
@@ -21,7 +21,7 @@ $d: 2em;
             top: 50%;
             left: 50%;
             transform: translate(-27%, -21%);
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 991px) {
                 top: 52%;
                 left: 46%;
                 width: 14em;
@@ -41,7 +41,7 @@ $d: 2em;
             text-align: center;
             counter-reset: a var(--i);
             line-height: 127px;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 991px) {
                 position: absolute;
                 top: 50%;
                 left: 43%;
